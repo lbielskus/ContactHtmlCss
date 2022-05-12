@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="Styles/normalize.css">
+    <link rel="stylesheet" href="Styles/spacing.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="Images/Logo.png">
+        </div>
+        <nav class="links" >
+            <ul>
+                <li><a href="index.html">About us</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="height:90vh">
+        <div>
+            <form class="formTable" action="/action_page.php">
+                <h1>Contact our <span>team!</span></h1>
+
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" value="Petras" style="width: 80%"><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" value="mail@mail.com" style="width: 80%"><br><br>
+                
+                <label for="number">Card number:</label><br>
+                <input type="number" id="number" name="number" min="00000001" max="99999999" pattern="[0-9]{8}" value="12345678" style="width: 80%"><br><br>
+                
+                <label for="text">Message:</label><br>
+                <textarea name="comment" form="usrform" style="width: 80%; height:50px">Enter message here...</textarea><br>
+
+                <input type="submit" value="Send" style="height: 30px; width: 200px;">
+
+                <div class="contacts">
+                    <h3>Name</h3>
+                    <h3>Position</h3>
+                    <h3>Phone Nr.</h3>
+                </div>
+                <div class="contactsFirst">
+                    <p style="color:#00c932; font-weight: bold;">Vidmantas</p>
+                    <p>CEO</p>
+                    <p>+37067574401</p>
+                </div>
+                <div class="contactsSecond">
+                    <p style="color:#00c932; font-weight: bold;">Nijole</p>
+                    <p>Manager</p>
+                    <p>+37067574401</p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            Copyright © Liudvikas Bielskus 2021. All rights reserved.
+        </div>
+    </footer>
+    
+</body>
+</html>
